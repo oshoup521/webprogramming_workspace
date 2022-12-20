@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function circle(radius) {
+            this.radius = radius;
+
+            this.perimeter = function () {
+                return 2 * Math.PI * radius;
+            }
+
+            this.area = function () {
+                return Math.PI * Math.pow(radius, 2);
+            }
+        }
+
+        function rectangle(length, breadth) {
+            this.length = length;
+            this.breadth = breadth;
+
+            this.perimeter = function () {
+                return (2*(length + breadth));
+            }
+
+            this.area = function () {
+                return length * breadth;
+            }
+        }
+
+        var c = new circle(3);
+        var r = new rectangle(4, 5);
+
+        document.write("area of circle is :" + c.area() + "<br>");
+        document.write("perimeter of circle is :" + c.perimeter() + "<br>");
+
+        document.write("Area of rectangle is : " + r.area() + "<br>");
+        document.write("perimeter of rectangle is :" + r.perimeter());
+    </script>
+</head>
+
+<body style="text-align: center;margin-top: 200px;">
+    <!-- <input type="text" name="" id="radius">
+    <button type="button">perimeter of circle</button>
+    &emsp;
+    &emsp;
+    <input type="text" name="" id="length">
+    <input type="text" name="" id="breadth">
+    <button type="button">Area </button>
+    <button type="button">perimeter of rectangle</button>
+    <div style="text-align: center;" id="mydiv"></div> -->
+</body>
+
+</html>

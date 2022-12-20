@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widtht, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function compundInterest(){
+            var pricipal = (document.getElementById("p").value);
+            var rate = (document.getElementById("r").value);
+            var year = (document.getElementById("n").value);
+            var compInterest = ((pricipal*(Math.pow((1+(rate/100)),year)))-pricipal);
+            alert("compound interest is : "+compInterest);
+        }
+    </script>
+</head>
+<body>
+    pricipal&nbsp;<input type="text" name="" id="p">&nbsp; 
+    
+    
+
+    year&nbsp;<input type="text" name="" id="n"> &nbsp;
+    
+    
+
+    rate&nbsp;<input type="text" name="" id="r"> &nbsp;
+    <br>
+    <button type="submit" onclick="compundInterest()">calculate</button>
+    
+</body>
+</html>

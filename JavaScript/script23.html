@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal() {
+            var amount = document.getElementById("amount").value;
+            var roi = document.getElementById("roi").value;
+            var period = document.getElementById("period").value;
+
+            if (amount > 1500000) {
+                document.getElementById("amountdiv").innerHTML = "enter lesser amount than 15 lakhs"
+                document.getElementById("amount").value = "";
+                document.getElementById("amount").focus()
+            }
+            if (period < 7 || period > 15) {
+                document.getElementById("yeardiv").innerHTML = "enter year btw 7 to 15"
+                document.getElementById("period").value = "";
+                document.getElementById("period").focus()
+            }
+            else {
+                var r = (roi / 12 / 100)
+                var n = (period * 12)
+                emi = amount * r * Math.pow((1 + r), n) / [Math.pow((1 + r), n) - 1]
+                document.getElementById("mpay").innerHTML = r;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Enter Loan Information:</h3>
+    <table>
+        <tr>
+            <td>1) Amount of Loan (Any currency)</td>
+            <td><input type="number" id="amount" required></td>
+            <td>
+                <div style="color: red;" id="amountdiv"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>2) Annual percentage rate of interest</td>
+            <td><input type="number" id="roi" required></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3) Repayment period in years</td>
+            <td><input type="number" id="period" required></td>
+            <td>
+                <div id="yeardiv" style="color: red;"></div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button style="text-align: center;" type="button" id="btn" onclick="cal()">Compute</button>
+    <p>Pyament Information:</p>
+    </div>
+    <table>
+        <tr>
+            <td>4) Your monthly payment will be</td>
+            <td><input type="text" id="mpay" readonly></td>
+        </tr>
+        <tr>
+            <td>5) Your total payment will be</td>
+            <td><input type="text" id="tpay" readonly></td>
+        </tr>
+        <tr>
+            <td>6) Your total interest payments will be</td>
+            <td><input type="text" id="interest" readonly></td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+
+                   function displayDetails(){
+                    var emp = [{empid:1,ename:"Ramesh",salary:1000},
+                   {empid:2,ename:"Suresh",salary:2000},
+                   {empid:2,ename:"Naresh",salary:3000},
+                   {empid:2,ename:"Karesh",salary:4000}];
+
+                    str = "<table border=2px><tr><th>empid</th><th>ename</th><th>salary</th></tr>"
+                        for(var i of emp){
+                            str += "<tr><td>"+i.empid+"</td><td>"+i.ename+"</td><td>"+i.salary+"</td></tr>"
+                        }
+                        str += "</table>"
+
+                        document.write(str);
+                   }
+    </script>
+</head>
+<body onload="displayDetails()">
+    
+</body>
+</html>

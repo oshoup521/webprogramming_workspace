@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            font-size: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #div1{
+            margin-top: 12px;
+            font-size: 16px;
+        }
+        table{
+            padding: auto;
+            border: 1px solid black;
+            padding: 10px;
+            border-spacing: 20px;
+        }
+        td{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+    <div>
+        <table>
+            <form action="">
+                <tr>
+                    <td colspan="2">
+                        <span>Internet Usage Survey</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="div1">
+                            The survey is being conducted to help identify the internet usage pattern of our customers.
+                            <br>
+                            Please take a few moments to complete and submit this short form.
+                            Thank you for your cooperation.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">
+                            What type of internet connection do you have?<br>(Select one)
+                        </label>
+                    </td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">---select one---</option>
+                            <option value="">Dial-up</option>
+                            <option value="">DSL</option>
+                            <option value="">High speed cable</option>
+                            <option value="">Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">
+                            What type of Computer do you use most at home? 
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="pc" id="pc">Desktop
+                        <input type="radio" name="pc" id="pc">Laptop
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">
+                            How would you describe your main reason for using the Internet?
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="1" id="1" >
+                        to do work related activites<br>
+                        <input type="radio" name="1" id="1" >
+                        to do school related activities.<br>
+                        <input type="radio" name="1" id="1" >
+                        For Entertainment purpose<br>
+                        <input type="radio" name="1" id="1" >
+                        other activities<br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Types of sites visited</legend>
+                            <br>
+                            During an average week,how long do you spend online? <br> <br>  
+                            <input type="checkbox" name="" id="">
+                            <label for="">Selfimprovement</label> <br>    
+                            <input type="checkbox" name="" id="">
+                            <label for="">Entertainment</label> <br>
+                            <input type="checkbox" name="" id="">
+                            <label for="">News and Sports</label> <br>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Reference</label> <br>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Email</label> <br>    
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Time spent using Internet</legend>
+                            <br>
+                            During an average week,how long do you spend online? <br> <br>  
+                            <input type="radio" name="2" id="2">
+                            <label for="">0-3 hours</label> <br>
+                            <input type="radio" name="2" id="2">
+                            <label for="">4-6 hours</label> <br>
+                            <input type="radio" name="2" id="2">
+                            <label for="">7-10 hours</label> <br>
+                            <input type="radio" name="2" id="2">
+                            <label for="">11-14 hours</label> <br>
+                            <input type="radio" name="2" id="2">
+                            <label for="">15+ hours</label> <br>    
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label for="">Please comment on your options concerning internet privacy and security</label>
+                        <br>
+                        <textarea name="" id="" cols="80" rows="4"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">First Name</label>
+                        <input type="text" name="" id="">
+                    </td>
+                    <td>
+                        <label for="">Last Name</label>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Age: </label>
+                        <input type="text" name="" id="">
+                    </td>
+                    <td>
+                        <label for="">Zip Code</label>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: right;">
+                        <button type="submit">Click to submit</button>
+                    </td>
+                    <td>
+                        <button type="reset">Clear Form</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
