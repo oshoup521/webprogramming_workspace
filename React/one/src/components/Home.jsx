@@ -12,8 +12,8 @@ const Home = () => {
         <>
             <div className="home" id="home">
                 <main>
-                    <h1>Osho updh.</h1>
-                    <p>Solution to all your problems</p>
+                    <h1>Osho Upadhyay</h1>
+                    <p>Node Developer & Generative AI Enthusiast</p>
                 </main>
             </div>
 
@@ -22,31 +22,16 @@ const Home = () => {
 
                 <div>
                     <p>
-                        We are your one and only solution to the tech problems you face
-                        every day. We are leading tech company whose aim is to increase the
-                        problem solving ability in children.
+                        Welcome to my portfolio! I specialize in Node.js development and have a keen interest in Generative AI technologies. My goal is to create innovative solutions that leverage the power of AI to solve real-world problems.
                     </p>
                 </div>
             </div>
 
             <div className="home3" id="about">
                 <div>
-                    <h1>Who we are?</h1>
+                    <h1>About Me</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-                        officiis hic illo quos sit commodi, aut magnam odio eligendi? Totam
-                        quis officiis fugit sunt dolores nostrum tenetur iusto est odio
-                        mollitia. Dolor placeat repellendus officia aspernatur dolorum
-                        harum. Dolorem cumque quaerat eius qui deserunt ullam laudantium
-                        quia tempore. Dignissimos esse sequi numquam est ipsam nemo,
-                        voluptas vel recusandae iste aspernatur qui quasi, commodi, atque
-                        ipsa dolores tempore asperiores? Dolores soluta placeat molestiae
-                        aperiam, ullam officia fugiat corrupti odio, suscipit ipsum cum vel
-                        nemo. Ratione quo tempore fugit quaerat! Facilis beatae impedit
-                        similique maxime praesentium sunt unde necessitatibus voluptates
-                        ipsa, et, numquam reiciendis eveniet? Aliquid nemo nesciunt placeat,
-                        qui fuga quae repellat sunt, non natus, iure ab officia rem ipsa cum
-                        sed cumque corporis voluptate quibusdam nostrum quod saepe
+                        I am a passionate developer with experience in building scalable applications using Node.js. I enjoy exploring the latest advancements in AI and how they can be integrated into software solutions. My journey in tech has been driven by a desire to learn and innovate.
                     </p>
                 </div>
             </div>
